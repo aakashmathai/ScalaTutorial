@@ -1,1 +1,1 @@
-val scalaTutorial = project 
+val scalaTutorial = project.in(file("."))
