@@ -41,7 +41,7 @@ object Listimplementation {
     println("Adding Tykhe : " + Names.map(s => s + " Thyke")) //concatenating string to each
     val nameListElements = Names.mkString(", ") //convert to string
     println("String created using name list : " + nameListElements)
-    println("Removing elements with 4 letters : " + Names.dropWhile(s => s.length == 4)) //remove with condition
+    println("Removing elements with 4 letters : " + Names.filterNot(s => s.length == 4)) //remove with condition
     println("Reverse list : " + Names.reverse) //reversing
     println("Tail of the list : " + Names.tail) //all except first
     println("Sorted List : " + Names.sortWith((s, t) => s.charAt(0).toLower < t.charAt(0).toLower)) //sorting

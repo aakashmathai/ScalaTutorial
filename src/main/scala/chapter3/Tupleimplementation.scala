@@ -7,5 +7,7 @@ object Tupleimplementation {
     println(pair)
     println(triplets)
     println(pair._1)
+    val tupleString = triplets.toString()
+    println(tupleString)
   }
 }
