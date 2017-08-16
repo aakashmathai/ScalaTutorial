@@ -17,5 +17,6 @@ object Calculator {
       case "/" => println("Quotient is : " + (No1 / No2) + "\nReminder is : " + (No1 % No2))
       case _ => println("Enter valid operator")
     }
+    scanner.close()
   }
 }
