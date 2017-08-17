@@ -18,7 +18,10 @@ object UsingYield {
         line <- fileLines(file)
         trimmed = line.trim
         if trimmed.matches(".*List.*")
-      } yield trimmed.length
+      } yield {
+        println(trimmed)
+        trimmed.length
+      }
 
     //printing the array of lengths
     for (i <- lineLengths.indices)
