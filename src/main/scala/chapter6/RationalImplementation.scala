@@ -16,7 +16,7 @@ object RationalImplementation {
   class Rational(n: Int, d: Int) {
     //making sure that d is never 0
     require(d != 0)
-    
+
     //dividing with gcd to get simplified form
     private val g = gcd(n.abs, d.abs)
     var numer: Int = n / g
